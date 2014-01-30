@@ -2,3 +2,117 @@
 *, *:before, *:after {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
  }
+
+@font-face {
+	font-family: 'digi';
+	src: url('http://cssdeck.com/uploads/resources/fonts/digii/DS-DIGII.TTF');
+}
+
+.container, .outer-shell, .inner-shell, .clock-screen, .bottom-labels {
+	margin: 0 auto;
+}
+
+.container {
+	width:750px;
+	margin-top: 20px;
+	font-family: Tahoma, Verdana, Segoe, sans-serif;
+	background-color: #F2F2F2;
+}
+
+.outer-shell {
+	width: 600px;
+	padding: 20px;
+	border-radius: 20px 20px 5px 5px;
+	background-color: #2E2E2E;
+}
+
+.inner-shell {
+	width: 500px;
+	padding: 20px;
+	background-color: #000;
+}
+
+.clock-screen {
+	width: 300px;
+	text-align: center;
+	position: relative;
+}
+
+.clock-screen, .freq-bar  {
+	background-color: #610B0B;
+}
+
+.bottom-labels {
+	width: 450px;
+	padding-left: 75px;
+}
+
+.am-labels, .fm-labels {
+	margin: 5px;
+}
+
+.freq-list {
+	display: inline;
+	font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+
+.freq-bar {
+	width: 300px;
+	height: 5px;
+	background-color: #610B0B;
+}
+
+.indicator-top-left, .indicator-bottom-left, .indicator-bottom-right, .indicator-top-right {
+	width: 20px;
+}
+
+.indicator-top-left {
+	top: 5px;
+	left: 5px;
+	position: absolute;
+}
+
+.indicator-bottom-left {
+	bottom: 5px;
+	left: 5px;
+	position: absolute;
+}
+
+.indicator-bottom-right {
+	bottom: 5px;
+	right: 5px;
+	position: absolute;
+}
+
+.indicator-top-right {
+	top: 5px;
+	right: 5px;
+	position: absolute;
+}
+
+.clock-text, .indicator-text {
+	color: #F00;
+	font-family: digi;
+}
+
+.clock-text {
+	font-size: 96px;
+}
+
+.indicator-on-text, .indicator-off-text  {
+	font-size: 14px;
+}
+
+.indicator-off-text {
+	color: #585858;
+	font-weight: bolder;
+}
+
+.clock-labels {
+	color: #FFF;
+	font-size: 1em;
+}
+
+.clearfix {
+	overflow: hidden;
+}
